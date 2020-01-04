@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="asset/style.css">
+    <title>What do you want to eat?</title>
 </head>
 <body>
+    <div class="product-filters">
+        <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
+         <li>
+           <a href="#"><h1>What do you want to eat?</h1></a>   
+           <ul class="vertical menu" data-accordion-menu>
+            <li class="product-filters-tab">
+              <a href="#"><h2>How do you want to get it?</h2></a>
+              <ul class="categories-menu menu vertical nested is-active">
+                 <li><input class="category-clear-selection" id="category-checkbox1" type="checkbox"><label for="category-checkbox1">Dine in</label></li>
+                 <li><input class="category-clear-selection" id="category-checkbox2" type="checkbox"><label for="category-checkbox2">Pick Up</label></li>
+                </ul>
+           </li>
+           <li class="product-filters-tab">
+              <a href="#"><h2>Which meal type are you in the mood for?</h2></a>
+              <ul class="categories-menu menu vertical nested is-active">
+                <li><input id="size-checkbox1" type="checkbox"><label for="size-checkbox1">Breakfast</label></li>
+                <li><input id="size-checkbox2" type="checkbox"><label for="size-checkbox2">Brunch</label></li>
+                <li><input id="size-checkbox3" type="checkbox"><label for="size-checkbox3">Lunch</label></li>
+                <li><input id="size-checkbox3" type="checkbox"><label for="size-checkbox3">Dinner</label></li>
+              </ul>
+      
+            </li>
+           <li class="product-filters-tab">
+            <a href="#"><h2>What are you craving?</h2></a>
+              <ul class="categories-menu menu vertical nested">
+                <li><input id="color-checkbox1" type="checkbox"><label for="color-checkbox1">Sweet</label></li>
+                <li><input id="color-checkbox2" type="checkbox"><label for="color-checkbox2">Savory</label></li>
+                <li><input id="color-checkbox3" type="checkbox"><label for="color-checkbox3">Salty</label></li>
+                <li><input id="color-checkbox4" type="checkbox"><label for="color-checkbox4">Healthy</label></li>
+                <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Comfort</label></li>
+              </ul>
+            </li>
+            <li class="product-filters-tab">
+                <a href="#"><h2>Which cuisine type?</h2></a>
+                  <ul class="categories-menu menu vertical nested">
+                    <li><input id="color-checkbox1" type="checkbox"><label for="color-checkbox1">American</label></li>
+                    <li><input id="color-checkbox2" type="checkbox"><label for="color-checkbox2">Asian</label></li>
+                    <li><input id="color-checkbox3" type="checkbox"><label for="color-checkbox3">Bakery</label></li>
+                    <li><input id="color-checkbox4" type="checkbox"><label for="color-checkbox4">Breakfast</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Dessert</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Fast Food</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Indian</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Italian</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Mediterranean</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Mexican</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Thai</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Seafood</label></li>
+                    <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Vegetarian</label></li>
+                    
+                </li>
+           <li class="product-filters-tab"> 
+            <a href="#"><h2>Whats your price point?</h2></a>
+              <ul class="categories-menu menu vertical nested"> 
+                <li><input id="price-checkbox1" type="checkbox"><label for="price-checkbox1">$</label></li>
+                <li><input id="price-checkbox2" type="checkbox"><label for="price-checkbox2">$$</label></li>
+                <li><input id="price-checkbox3" type="checkbox"><label for="price-checkbox3">$$$</label></li>
+                <li><input id="price-checkbox4" type="checkbox"><label for="price-checkbox4">$$$$</label></li>
+              </ul>
+            </li>
+           </ul>
+         </li>
+       </ul>
+       
+       
+
     
 </body>
 </html>
