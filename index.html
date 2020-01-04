@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>What Want to Eat?</title>
+
+</head>
+
+<body>
+<input type="text" id="zipcodeDiv">
+<button id="find-city" type="button">Search</button>
+</input>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+var zipcode = $("#zipcodeDiv").val();
+$("#zipcode").val("");
+var usRestaurantMenus = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/zip_code/" + zipcode + "?page=1",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
+		"x-rapidapi-key": "db19f6c31fmsh74ab69ea63379d5p187630jsn004e83353fc9"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+</script>
+</body>
+
+</html>
