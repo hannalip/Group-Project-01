@@ -1,8 +1,8 @@
-/* body {
+body {
     background-image: url("../images/background.png");
     width: ;
-  } */
-  product-filters {
+  }
+  .product-filters {
     padding: 0.5rem 1.5rem;
     background-color: #fefefe;
     margin-top: 2.5rem;
