@@ -20,13 +20,12 @@
                 </a>
                 <ul class="vertical menu" data-accordion-menu>
                     <li class="product-filters-tab">
-                        <a href="#">`
+                        <a href="#">
                             <h2>How do you want to get it?</h2>
                         </a>
                         <div class="uk-margin">
                           <div class="uk-form-controls">
-                              <select class="uk-select" id="form-stacked-select dineorpick">
-                                <option></option>
+                              <select class="uk-select dineorpick" id="form-stacked-select">
                                   <option value="Dine In">Dine in</option>
                                   <option value="Pick Up">Pick Up</option>
                               </select>
@@ -36,8 +35,7 @@
                     </a>
                     <div class="uk-margin">
                       <div class="uk-form-controls">
-                          <select class="uk-select meal-type" id="form-stacked-select meal-type">
-                            <option></option>
+                          <select class="uk-select mealtype" id="form-stacked-select">
                               <option value="Breakfast">Breakfast</option>
                               <option value="Lunch">Lunch</option>
                               <option value="Dinner">Dinner</option>
@@ -50,8 +48,7 @@
                         </a>
                         <div class="uk-margin">
                           <div class="uk-form-controls">
-                              <select class="uk-select cuisine" id="form-stacked-select cuisine">
-                                <option></option>
+                              <select class="uk-select cuisine" id="form-stacked-select">
                                   <option value="American">American</option>
                                   <option value="Asian">Asian</option>
                                   <option value="Bakery">Bakery</optionvalue="">
@@ -72,16 +69,17 @@
                         </a>
                         <div class="uk-margin">
                           <div class="uk-form-controls">
-                              <select class="uk-select pricepoint" id="form-stacked-select pricepoint">
-                                <option></option>
+                              <select class="uk-select pricepoint" id="form-stacked-select">
                                   <option value="$">$</option>
                                   <option value="$$">$$</option>
                                   <option value="$$$">$$$</optionvalue="">
                                   <option value="$$$$">$$$$</option>
-                                  
                               </select>
                           </div>
                       </div>
+                    </div>
+                    <button class="uk-button uk-button-default submit" value="submit">Submit</button>
+                </div>
         <p id="status"></p>
         <a id="map-link" target="_blank"></a>
 
@@ -92,12 +90,6 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 geoFindMe();
-                // $("#find-city").on("click", function (event) {
-                // 	event.preventDefault();
-                // 	var zipcode = $("#zipcodeDiv").val();
-                // 	$("#zipcode").val("");
-                // 	getResturants(zipcode)
-                // });
             });
 
 
@@ -158,6 +150,7 @@
 
 
         </script>
+    <script src="./script2.js"></script>
 </body>
 
 </html>
