@@ -12,17 +12,13 @@
 <body>
 
 </div>
-    <div class="product-filters">
-        <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
-            <li>
-                <a href="#">
-                    <h1>What do you want to eat?</h1>
-                </a>
-            <div class= selections> 
-                <ul class="vertical menu" data-accordion-menu>
-                    <li class="product-filters-tab">
-                        <a href="#">
+<div class="header">
+  <h1>What do you want to eat?</h1>
+</div> 
+<div class="options"> 
+                 <ul class="vertical menu" data-accordion-menu>
                             <h2>When do you want it?</h2>
+
                         </a>
                         <div class="uk-margin">
                           <div class="uk-form-controls">
@@ -44,9 +40,9 @@
                           </select>
                       </div>
                   </div>
-                    <li class="product-filters-tab">
-                        <a href="#">
+        
                             <h2>What are you feeling?</h2>
+
                         </a>
                         <div class="uk-margin">
                           <div class="uk-form-controls">
@@ -65,8 +61,7 @@
                               </select>
                           </div>
                       </div>
-                    <li class="product-filters-tab">
-                        <a href="#">
+                
                             <h2>How rich are you feeling?</h2>
                         </a>
                         <div class="uk-margin">
@@ -80,8 +75,9 @@
                           </div>
                       </div>
                     </div>
+
                     <button type= "button">FILL ME UP</button>
-                </div>
+                   
             </div>
         <p id="status"></p>
         <a id="map-link" target="_blank"></a>
@@ -89,68 +85,9 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                geoFindMe();
-            });
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script
 
-
-            function geoFindMe() {
-
-                const status = document.querySelector('#status');
-                const mapLink = document.querySelector('#map-link');
-
-                mapLink.href = '';
-                mapLink.textContent = '';
-
-                function success(position) {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    console.log(latitude);
-                    console.log(longitude);
-
-                    status.textContent = '';
-                    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-                    // mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-                    console.log(mapLink.textContent)
-                    getResturants(longitude, latitude)
-                }
-
-                function error() {
-                    status.textContent = 'Unable to retrieve your location';
-                }
-
-                if (!navigator.geolocation) {
-                    status.textContent = 'Geolocation is not supported by your browser';
-                } else {
-                    status.textContent = 'Locating…';
-                    navigator.geolocation.getCurrentPosition(success, error);
-                }
-
-            }
-
-            function getResturants(longitude, latitude) {
-                var usRestaurantMenus = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/search/geo?page=1&lon=" + longitude + "&lat=" + latitude + "&distance=1",
-                    "method": "GET",
-                    "headers": {
-                        "x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
-                        "x-rapidapi-key": "db19f6c31fmsh74ab69ea63379d5p187630jsn004e83353fc9"
-                    }
-                }
-                $.ajax(usRestaurantMenus).done(function (response) {
-                    console.log(response);
-                });
-            };
-          
-          
-       
-
-
-        </script>
+      
     <script src="./script2.js"></script>
 </body>
 

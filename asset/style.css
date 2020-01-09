@@ -1,12 +1,37 @@
 body {
     background-image: url("../images/background.png");
+    font-family: chalk;
+    background-size: cover;
+    
 
   }
+.header{
+  font: size 100px;
+  text-align: center;
+  color: white;
+  font-family:"chalk";
+}
+h1{
+  font-size: 100px;
+  background-color:#B0c4de;
+  opacity: 1;
+  
+}
+h2{
+  color: white;
+  font-family: chalk;
+  font-size: 40px;
+}
+@font-face{
+  font-family: chalk;
+  src:url(../ChalkboardByMartaVanEck-gvpp.ttf);
+}
 
   .product-filters {
     padding: 0.5rem 1.5rem;
-    background-color: #fefefe;
     margin-top: 2.5rem;
+    color: white;
+
   }
   
   .product-filters label {
