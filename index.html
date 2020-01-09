@@ -12,15 +12,11 @@
 <body>
 
 </div>
-    <div class="product-filters">
-        <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
-            <li>
-                <a href="#">
-                    <h1>What do you want to eat?</h1>
-                </a>
-                <ul class="vertical menu" data-accordion-menu>
-                    <li class="product-filters-tab">
-                        <a href="#">
+<div class="header">
+  <h1>What do you want to eat?</h1>
+</div> 
+<div class="options"> 
+                 <ul class="vertical menu" data-accordion-menu>
                             <h2>How do you want to get it?</h2>
                         </a>
                         <div class="uk-margin">
@@ -42,8 +38,6 @@
                           </select>
                       </div>
                   </div>
-                    <li class="product-filters-tab">
-                        <a href="#">
                             <h2>Which cuisine type?</h2>
                         </a>
                         <div class="uk-margin">
@@ -63,8 +57,6 @@
                               </select>
                           </div>
                       </div>
-                    <li class="product-filters-tab">
-                        <a href="#">
                             <h2>Whats your price point?</h2>
                         </a>
                         <div class="uk-margin">
@@ -77,6 +69,7 @@
                               </select>
                           </div>
                       </div>
+                    </div>
                     </div>
                     <button class="uk-button uk-button-default submit" value="submit">Submit</button>
                 </div>
@@ -143,6 +136,14 @@
                 });
             };
           
+      $.ajax({
+        url : 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + $("#origin").val() + '&destinations=' + $("#destinations").val() +'&mode=driving&key=AIzaSyDljbJhdgQtOZl4r72kH3HeXxJzyRjCS2o',
+        type: 'GET',
+        success : function(data){
+        //My code
+        }
+    });
+        
           
           var mealType
           var cuisine
