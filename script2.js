@@ -1,8 +1,6 @@
 $(document).ready(function () {
-
     var latitude;
     var longitude;
-
     $(".submit").on("click", function () {
         // Get from the form how the client wants to get food
         var dineorpick = $(".dineorpick").val();
@@ -16,7 +14,6 @@ $(document).ready(function () {
         // Get from the form the price
         var pricepoint = $(".pricepoint").val();
         console.log(pricepoint)
-
         // Resturant AJAX Call
         var usRestaurantMenus = {
             "async": true,
@@ -28,36 +25,27 @@ $(document).ready(function () {
                 "x-rapidapi-key": "db19f6c31fmsh74ab69ea63379d5p187630jsn004e83353fc9"
             }
         }
-
         $.ajax(usRestaurantMenus).done(function (response) {
             console.log("Normal", response);
-
         // Filter Results Function
         const dataFilteredByCuisinePrice = response.result.data.filter(function (r) {
             if (r.cuisines.includes(cuisine)) return true;
-
             return false;
         })
         // Array#includes and Array#filter
-
         console.log(dataFilteredByCuisinePrice)
         });
     });
-
     function geoFindMe() {
-
         const status = document.querySelector('#status');
         const mapLink = document.querySelector('#map-link');
-
         mapLink.href = '';
         mapLink.textContent = '';
-
         function success(position) {
             latitude = position.coords.latitude;
             longitude = position.coords.longitude;
             console.log(latitude);
             console.log(longitude);
-
             status.textContent = '';
             // queryURL is the url we'll use to query the API
             mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
@@ -65,17 +53,16 @@ $(document).ready(function () {
             console.log(mapLink.textContent)
             // getResturants(longitude, latitude)
         }
-
         function error() {
             status.textContent = 'Unable to retrieve your location';
         }
-
         if (!navigator.geolocation) {
             status.textContent = 'Geolocation is not supported by your browser';
         } else {
             status.textContent = 'Locating…';
             navigator.geolocation.getCurrentPosition(success, error);
         }
-
     }
+    geoFindMe();
+});
 
