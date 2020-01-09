@@ -78,5 +78,4 @@ $(document).ready(function () {
         }
 
     }
-    geoFindMe();
-});
+
