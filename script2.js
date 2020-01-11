@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var latitude;
     var longitude;
+
     $(".submit").on("click", function () {
         // Get from the form how the client wants to get food
         var dineorpick = $(".dineorpick").val();
@@ -15,26 +16,18 @@ $(document).ready(function () {
         var pricepoint = $(".pricepoint").val();
         console.log(pricepoint)
         // Resturant AJAX Call
-        var usRestaurantMenus = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/search/geo?page=1&lon=" + longitude + "&lat=" + latitude + "&distance=1",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
-                "x-rapidapi-key": "db19f6c31fmsh74ab69ea63379d5p187630jsn004e83353fc9"
-            }
-        }
-        $.ajax(usRestaurantMenus).done(function (response) {
-            console.log("Normal", response);
-        // Filter Results Function
-        const dataFilteredByCuisinePrice = response.result.data.filter(function (r) {
-            if (r.cuisines.includes(cuisine)) return true;
-            return false;
-        })
-        // Array#includes and Array#filter
-        console.log(dataFilteredByCuisinePrice)
-        });
+            console.log(json);
+  
+            // Filter Results Function
+            const dataFilteredByCuisinePrice = json.result.data.filter(function (r) {
+                if (r.cuisines.includes(cuisine)) return true;
+                return false;
+            })
+            // Array#includes and Array#filter
+            console.log(dataFilteredByCuisinePrice)
+
+  
+
     });
     function geoFindMe() {
         const status = document.querySelector('#status');
