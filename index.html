@@ -10,122 +10,17 @@
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <h2>Dine In or Pick up</h2>
-        </div>
 
-        <nav>
-           <div class="W3-bar w3-black"></div>
-        </nav>
-    </header>
-
-    <showwcase>
-        <div class="container">
-            <h1>What do you want to eat</h1>
-            <h3> Savory</h3>
-            <div class="category">
-                <div class="Breakfast">
-                    <img src="images/breakfast.jpeg" alt="">
-                    <h4>Healthy</h4>
-                    <p>lorem ipsum dolornn  lhdlldjdk lfkfkfl jeuftss</p>
-
-                </div>
-            </div>
-            <div class="Brunch">
-                <img src="images/Brunch.jpeg" alt="">
-                <h4>Brunch</h4>
-                <p> loree  berrtss keuudjjskjk</p>
-
-            </div>
-            <div class="Lunch">
-                <img src="images/Lunch.jpeg" alt="">
-                <h4>Healthy</h4>
-                <p> lorem greading doisj linhg</p>
-
-            </div>
-            <div class="Dinner">
-                <img src="images/dinner.jpeg" alt="">
-                <h4>Dinner</h4>
-                <p> lorem greading doisj linhg</p>
-        </div>
-    </showwcase>
-    
-
-
-         <a href="#"><button class="btn">Read More</button></a>    
-   
         <p id="status"></p>
         <a id="map-link" target="_blank"></a>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                geoFindMe();
-                // $("#find-city").on("click", function (event) {
-                // 	event.preventDefault();
-                // 	var zipcode = $("#zipcodeDiv").val();
-                // 	$("#zipcode").val("");
-                // 	getResturants(zipcode)
-                // });
-            });
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script
 
-
-            function geoFindMe() {
-
-                const status = document.querySelector('#status');
-                const mapLink = document.querySelector('#map-link');
-
-                mapLink.href = '';
-                mapLink.textContent = '';
-
-                function success(position) {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    console.log(latitude);
-                    console.log(longitude);
-
-                    status.textContent = '';
-                    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-                    // mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-                    console.log(mapLink.textContent)
-                    getResturants(longitude, latitude)
-                }
-
-                function error() {
-                    status.textContent = 'Unable to retrieve your location';
-                }
-
-                if (!navigator.geolocation) {
-                    status.textContent = 'Geolocation is not supported by your browser';
-                } else {
-                    status.textContent = 'Locating…';
-                    navigator.geolocation.getCurrentPosition(success, error);
-                }
-
-            }
-
-            function getResturants(longitude, latitude) {
-                var usRestaurantMenus = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/search/geo?page=1&lon=" + longitude + "&lat=" + latitude + "&distance=1",
-                    "method": "GET",
-                    "headers": {
-                        "x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
-                        "x-rapidapi-key": "db19f6c31fmsh74ab69ea63379d5p187630jsn004e83353fc9"
-                    }
-                }
-                $.ajax(usRestaurantMenus).done(function (response) {
-                    console.log(response);
-                });
-            };
-
-
-        </script>
+      
+    <script src="./script2.js"></script>
 </body>
 
 </html>
