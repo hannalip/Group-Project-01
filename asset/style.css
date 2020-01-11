@@ -92,3 +92,7 @@ h2{
     font: bold 15px arial, sans-serif;
     text-shadow:none;
     }
+
+    #map {
+      height: 500px;
+    }

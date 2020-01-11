@@ -11,84 +11,97 @@
 
 <body>
 
-</div>
-<div class="header">
-  <h1>What do you want to eat?</h1>
-</div> 
-<div class="options"> 
-                 <ul class="vertical menu" data-accordion-menu>
-                            <h2>When do you want it?</h2>
+    </div>
+    <div class="header">
+        <h1>What do you want to eat?</h1>
+    </div>
+    <div class="options">
+        <ul class="vertical menu" data-accordion-menu>
+            <h2>When do you want it?</h2>
 
-                        </a>
-                        <div class="uk-margin">
-                          <div class="uk-form-controls">
-                              <select class="uk-select time" id="form-stacked-select">
-                                  <option value="Anytime">ANYTIME</option>
-                                  <option value="Now">NOW</option>
-                                  <option value="24 Hours">24 HOURS</option>
-                              </select>
-                          </div>
-                      </div>
-                      <h2>What do you want???</h2>
-                    </a>
-                    <div class="uk-margin">
-                      <div class="uk-form-controls">
-                          <select class="uk-select mealtype" id="form-stacked-select">
-                              <option value="Breakfast">Breakfast</option>
-                              <option value="Lunch">Lunch</option>
-                              <option value="Dinner">Dinner</option>
-                          </select>
-                      </div>
-                  </div>
-        
-                            <h2>What are you feeling?</h2>
-
-                        </a>
-                        <div class="uk-margin">
-                          <div class="uk-form-controls">
-                              <select class="uk-select cuisine" id="form-stacked-select">
-                                  <option value="American">American</option>
-                                  <option value="Asian">Asian</option>
-                                  <option value="Bakery">Bakery</optionvalue="">
-                                  <option value="Dessert">Dessert</option>
-                                  <option value="Fast Food">Fast Food</option>
-                                  <option value="Indian">Indian</option>
-                                  <option value="Italian">Italian</option>
-                                  <option value="Mexican">Mexican</option>
-                                  <option value="Thai">Thai</option>
-                                  <option value="Seafood">Seafood</option>
-                                  <option value="Vegetarian">Vegetarian</option>
-                              </select>
-                          </div>
-                      </div>
-                
-                            <h2>How rich are you feeling?</h2>
-                        </a>
-                        <div class="uk-margin">
-                          <div class="uk-form-controls">
-                              <select class="uk-select pricepoint" id="form-stacked-select">
-                                  <option value="$">$</option>
-                                  <option value="$$">$$</option>
-                                  <option value="$$$">$$$</optionvalue="">
-                                  <option value="$$$$">$$$$</option>
-                              </select>
-                          </div>
-                      </div>
-                    </div>
-
-                    <button type= "button">FILL ME UP</button>
-                   
+            </a>
+            <div class="uk-margin">
+                <div class="uk-form-controls">
+                    <select class="uk-select time" id="form-stacked-select">
+                        <option value="Anytime">ANYTIME</option>
+                        <option value="Now">NOW</option>
+                        <option value="24 Hours">24 HOURS</option>
+                    </select>
+                </div>
             </div>
-        <p id="status"></p>
-        <a id="map-link" target="_blank"></a>
+            <h2>What do you want???</h2>
+            </a>
+            <div class="uk-margin">
+                <div class="uk-form-controls">
+                    <select class="uk-select mealtype" id="form-stacked-select">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                </div>
+            </div>
 
+            <h2>What are you feeling?</h2>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            </a>
+            <div class="uk-margin">
+                <div class="uk-form-controls">
+                    <select class="uk-select cuisine" id="form-stacked-select">
+                        <option value="American">American</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Bakery">Bakery</optionvalue="">
+                        <option value="Dessert">Dessert</option>
+                        <option value="Fast Food">Fast Food</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Mexican">Mexican</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Seafood">Seafood</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                    </select>
+                </div>
+            </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script
+            <h2>How rich are you feeling?</h2>
+            </a>
+            <div class="uk-margin">
+                <div class="uk-form-controls">
+                    <select class="uk-select pricepoint" id="form-stacked-select">
+                        <option value="$">$</option>
+                        <option value="$$">$$</option>
+                        <option value="$$$">$$$</optionvalue="">
+                        <option value="$$$$">$$$$</option>
+                    </select>
+                </div>
+            </div>
+    </div>
 
-      
+    <button type="button" class="submit">FILL ME UP</button>
+
+    </div>
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
+    
+    <div class="container">
+        <div class="row">
+            <h1 class="display-4">My Map</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="./FOODAPI.js"></script>
     <script src="./script2.js"></script>
+    <script src="./script4.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=createMap&key=AIzaSyD8pIBJCX8BS-Q6Y1KlamivOqY6oL0LiaI" async defer></script>
 </body>
 
 </html>
