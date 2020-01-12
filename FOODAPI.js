@@ -1,4 +1,4 @@
-var json = 
+var json =
 {
     "result": {
         "totalResults": 823,
@@ -88,7 +88,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 852-9384",
                 "restaurant_id": 250274,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -135,7 +135,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 625-7370",
                 "restaurant_id": 150737,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -159,7 +159,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 852-3486",
                 "restaurant_id": 250276,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -182,7 +182,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 625-5089",
                 "restaurant_id": 150773,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -230,7 +230,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 643-9955",
                 "restaurant_id": 148202,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -277,7 +277,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 852-6115",
                 "restaurant_id": 150782,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -301,7 +301,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 522-9728",
                 "restaurant_id": 150780,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -324,7 +324,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 222-9729",
                 "restaurant_id": 113240,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -348,7 +348,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 330-0058",
                 "restaurant_id": 250307,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -393,7 +393,7 @@ var json =
                     "state": "NY",
                     "postal_code": "11201"
                 },
-                "restaurant_phone": "",
+                "restaurant_phone": "$",
                 "restaurant_id": 217320,
                 "price_range": "",
                 "menus": [],
@@ -449,7 +449,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 643-6120",
                 "restaurant_id": 250293,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
@@ -521,7 +521,7 @@ var json =
                 },
                 "restaurant_phone": "(917) 398-3488",
                 "restaurant_id": 516886,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [],
@@ -555,7 +555,7 @@ var json =
                     "lon": -73.991822,
                     "lat": 40.690461
                 },
-                "hours": "Sun: 10am-8pm  Mon-Thu: 8am-10pm  Fri-Sat: 9am-12am",
+            "hours": "Sun: 10am-8pm  Mon-Thu: 8am-10pm  Fri-Sat: 9am-12am",
                 "address": {
                     "city": "Brooklyn",
                     "formatted": "119 Court St Brooklyn, NY 11201",
@@ -581,7 +581,7 @@ var json =
                     "lon": -73.993188,
                     "lat": 40.687993
                 },
-                "hours": "Daily 11am-10pm",
+                "hours": "11am-10pm",
                 "address": {
                     "city": "Brooklyn",
                     "formatted": "172 Court St Brooklyn, NY 11201",
@@ -591,7 +591,7 @@ var json =
                 },
                 "restaurant_phone": "(718) 260-0066",
                 "restaurant_id": 150792,
-                "price_range": "",
+                "price_range": "$",
                 "menus": [],
                 "price_range_100": 0,
                 "cuisines": [
