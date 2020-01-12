@@ -97,4 +97,26 @@ display:block;
   height: 500px;
 }
 
+.cards {
+  box-sizing: border-box;
+  width: 20%;
+  margin: 5px;
+  padding: 5px;
+  
+}
+
+.cards:first-child {
+  margin-left: 0px;
+}
+
+.cards:last-child {
+  margin-right: 0px;
+}
+
+.resultsdisplay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
 

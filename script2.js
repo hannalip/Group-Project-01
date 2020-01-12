@@ -17,18 +17,17 @@ $(document).ready(function () {
         console.log(pricepoint)
         // Resturant AJAX Call
             console.log(json);
-  
             // Filter Results Function
             const dataFilteredByCuisinePrice = json.result.data.filter(function (r) {
-                if (r.cuisines.includes(cuisine)) return true;
+                if (r.cuisines.includes(cuisine) && r.price_range.includes(pricepoint)) return true;
                 return false;
             })
             // Array#includes and Array#filter
             console.log(dataFilteredByCuisinePrice)
-
-  
+            $("#cityresturantdisplay").html("<h1>" + dataFilteredByCuisinePrice);
 
     });
+
     function geoFindMe() {
         const status = document.querySelector('#status');
         const mapLink = document.querySelector('#map-link');
