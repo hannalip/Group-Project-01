@@ -36,6 +36,6 @@ Things to note: Our API crashed 4 days prior to the application due date. Due to
 
 ##Backlog
 
-Link to Git hub Pages: ____________________________
-You can find a live demo link _____________________
+Link to Git hub Pages: https://github.com/hannalip/Group-Project-01
+You can find a live demo link https://hannalip.github.io/Group-Project-01/
 

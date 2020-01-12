@@ -257,7 +257,7 @@ var json =
                 "menus": [],
                 "price_range_100": 1,
                 "cuisines": [
-                    "Bar Food",
+                    "Pub Food",
                     "Wings"
                 ],
                 "restaurant_name": "The Brazen Head"

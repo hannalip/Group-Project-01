@@ -10,6 +10,7 @@ text-align: center;
 color: white;
 font-family:"chalk";
 }
+
 h1{
 font-size: 100px;
 background-color:#B0c4de;
@@ -23,7 +24,7 @@ font-size: 40px;
 }
 @font-face{
 font-family: chalk;
-src:url(../ChalkboardByMartaVanEck-gvpp.ttf);
+src: url(../ChalkboardByMartaVanEck-gvpp.ttf);
 }
 .product-filters {
   padding: 0.5rem 1.5rem;
@@ -82,13 +83,13 @@ button {
 background-color:#B0c4de;
 border: none;
 color: white;
-padding: 25px 20px;
+padding: 10px 10px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 40px;
+font-size: 35px;
 font-family: chalk;
-width: 25%;
+width: 10%;
 margin:auto;
 display:block;
 }
