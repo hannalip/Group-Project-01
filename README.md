@@ -30,9 +30,12 @@ You can then click into the places suggest and view the menu.
 
 * As a user I should be able to look at menus from local restaurants.
 
+### 503 Error   
+Things to note: Our API crashed 4 days prior to the application due date. Due to the server no longer being available; we did find a work around where we were able to save the results in a js file based on the latest results. While we are limited to our results, we are still able to produce an application. For the future we will note APIs and their strengths and weaknesses. Do not solely rely on Rapid API. 
+
 
 ##Backlog
 
-Link to Git hub Pages: ____________________________
-You can find a live demo link _____________________
+Link to Git hub Pages: https://github.com/hannalip/Group-Project-01
+You can find a live demo link https://hannalip.github.io/Group-Project-01/
 
