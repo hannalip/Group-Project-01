@@ -34,7 +34,6 @@ You can then click into the places suggest and view the menu.
 Things to note: Our API crashed 4 days prior to the application due date. Due to the server no longer being available; we did find a work around where we were able to save the results in a js file based on the latest results. While we are limited to our results, we are still able to produce an application. For the future we will note APIs and their strengths and weaknesses. Do not solely rely on Rapid API. 
 
 
-
 ##Backlog
 
 Link to Git hub Pages: ____________________________
