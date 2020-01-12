@@ -24,8 +24,27 @@ $(document).ready(function () {
             })
             // Array#includes and Array#filter
             console.log(dataFilteredByCuisinePrice)
-            $("#cityresturantdisplay").html("<h1>" + dataFilteredByCuisinePrice);
+            // var resultsString = JSON.stringify(dataFilteredByCuisinePrice)
+            
+            var fiverow = $("<div>").attr("class", "resultsdisplay");
+            $("#resturantdisplay").append(fiverow);
 
+            for (var i = 0; i < dataFilteredByCuisinePrice.length; i++) {
+                var newCol = $("<div>").attr("class", "cards");
+                    fiverow.append(newCol);
+
+                var newCard = $("<div>").attr("class", "card text-white bg-primary");
+                    newCol.append(newCard);
+
+                var cardHead = $("<div>").attr("class", "card-header").text(JSON.stringify(dataFilteredByCuisinePrice[i].restaurant_name));
+                    newCard.append(cardHead);
+                
+                    var bodyDiv = $("<div>").attr("class", "card-body");
+                    newCard.append(bodyDiv);
+                
+                    bodyDiv.append($("<p>").attr("class", "card-text").html("Address: " + JSON.stringify(dataFilteredByCuisinePrice[i].address)));
+                    bodyDiv.append($("<p>").attr("class", "card-text").text("Hours: " + JSON.stringify(dataFilteredByCuisinePrice[i].hours)));
+            }
     });
 
     function geoFindMe() {
