@@ -42,6 +42,7 @@ $(document).ready(function () {
 
         var fiverow = $("<div>").attr("class", "resultsdisplay")
         $("#resturantdisplay").append(fiverow);
+        if (dataFilteredByCuisinePrice.length > 0) {
         $("#restHeader").append("<h1>Show Me The Food!</h1>")
         for (var i = 0; i < dataFilteredByCuisinePrice.length; i++) {
 
@@ -60,7 +61,9 @@ $(document).ready(function () {
             bodyDiv.append($("<p>").attr("class", "card-text").html("Address: " + JSON.stringify(dataFilteredByCuisinePrice[i].address.formatted)));
             bodyDiv.append($("<p>").attr("class", "card-text").text("Hours: " + JSON.stringify(dataFilteredByCuisinePrice[i].hours)));
         }
-    
+        } else {
+            $("#restHeader").append("<h1>Womp Womp You'll Starve!</h1>")
+        }
 }
 
 function geoFindMe() {

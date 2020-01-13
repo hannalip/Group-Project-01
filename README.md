@@ -12,7 +12,6 @@ You can then click into the places suggest and view the menu.
 
 
 ## Technologies and Languages Used
-* Google Maps API
 * Restaurant Menus API
 * CSS
 * Javascript
