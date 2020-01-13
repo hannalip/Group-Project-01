@@ -8,22 +8,25 @@ body {
 font-size: 100px;
 text-align: center;
 color: white;
-font-family:"chalk";
+font-family: chalk;
 }
 
 h1{
 font-size: 100px;
 background-color:#B0c4de;
-opacity: 1;
-
+opacity: .95;
+color: white;
+text-align: center;
+font-family: chalk;
 }
+
 h2{
 color: white;
 font-family: chalk;
 font-size: 40px;
 }
 @font-face{
-font-family: chalk;
+  font-family: chalk;
 src: url(../ChalkboardByMartaVanEck-gvpp.ttf);
 }
 .product-filters {
@@ -94,7 +97,7 @@ margin:auto;
 display:block;
 }
 
-#map {
+.map {
   height: 500px;
 }
 
@@ -103,6 +106,10 @@ display:block;
   width: 20%;
   margin: 5px;
   padding: 5px;
+  background-color:#B0c4de;
+  text-align: center;
+  color: white;
+  font-size: 21px;
   
 }
 
